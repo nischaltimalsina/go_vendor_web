@@ -30,9 +30,9 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SidebarProvider>
           <AppSidebar collapsible="dock" />
-          <SidebarInset className="overflow-hidden">
+          <SidebarInset className="max-h-svh overflow-hidden">
             <AppSidebarNav />
-            <div className="p-2 md:p-4">{children}</div>
+            <div className="overflow-y-scroll p-2 md:p-4">{children}</div>
           </SidebarInset>
         </SidebarProvider>
       </body>

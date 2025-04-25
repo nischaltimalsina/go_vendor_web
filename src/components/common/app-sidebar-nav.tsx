@@ -19,7 +19,7 @@ import { useTheme } from "next-themes"
 
 export default function AppSidebarNav() {
   return (
-    <SidebarNav className="border-b">
+    <SidebarNav className="h-14 shrink-0 border-b">
       <span className="flex items-center gap-x-4">
         <SidebarTrigger className="-mx-2" />
         <Separator className="h-6" orientation="vertical" />
